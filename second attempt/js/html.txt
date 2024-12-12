@@ -21,15 +21,18 @@ currying
 array method
 call appaly bind
 JSON parase and JSON stringfy
-prototype
-proxy object
+prototype---------------
+proxy object --------------
 set (), map()
 weakSet(),WeakMap()
+
 ternary opertaor
-regular expression
-Swith case with logical operators
+regular expression----------------
+Swith case with logical operators-----------
 Find the second largest even number in an array without sorting
-ADD event listners(using html page DOM)
+delete the 3 product
+
+ADD event listners(using html page DOM) --------------------
 
 let a = [2,4,1,3,7,6,5,9,8,]
 2,
