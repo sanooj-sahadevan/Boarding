@@ -26,7 +26,7 @@ class HashTable {
     let index = this.hash(key);
     let startIndex = index;
 
-    while (this.table[index] && this.table[index][0] !== key) {
+    while (this.table[index] && this.table[0] !== key) {
       index = (index + 1) % this.size;
       if (startIndex === index) {
         return "there is no space";
