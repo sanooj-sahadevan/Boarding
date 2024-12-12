@@ -1,0 +1,23 @@
+Give the non-repeating string using hashtable. Input:  "helloworlddyttt", Output : "helloworlddyttt"
+Longest repeating character. Input:   “etrrrtutraaaaa”, Output : "aaaaa"
+Sort an array of objects in O(nlogn).
+given linked list code with duplicate ,elements write a function to remove duplicate elements from LL
+Write a recursive function to check if a given string is a palindrome (let str ='malayalam')
+Create a singly linked list and double linked list
+Factorial of a number using recursion
+fibonacci series using recursion
+Linear search
+Binary search
+
+ 4 sorting
+stack
+stack using linked list
+QUeue
+
+hashtable
+seperate chaining
+linear probing 
+quadratic probing
+Double hashing
+Rehashing
+You have a linked list to sort, what algorithm would you prefer? 

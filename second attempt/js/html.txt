@@ -1,0 +1,45 @@
+least occurence
+   odd number /even number : more than one(some conditions)
+closure
+callback hell
+Convert that callback hell into promise
+given student object, replace all values with your name (hasOwnProperty)
+generator function (generate even numbers endlessly)
+factory function -----------------------
+constructor function ----------------------
+iife
+deepcopy- deep clone
+mad reduce filter------------------
+type casting, type coersion----------------------
+promise.all, Promise.all settled,  promise.race, promise.any
+async await----------
+spread, rest --------
+currying
+
+
+??
+array method
+call appaly bind
+JSON parase and JSON stringfy
+prototype
+proxy object
+set (), map()
+weakSet(),WeakMap()
+ternary opertaor
+regular expression
+Swith case with logical operators
+Find the second largest even number in an array without sorting
+ADD event listners(using html page DOM)
+
+let a = [2,4,1,3,7,6,5,9,8,]
+2,
+4,2
+1,4,2
+3,1,4,2
+
+using generator function print 
+2*2*2
+3*3*3*3
+4*4*4*4*4
+5*5*5*5*5*5
+6*6*6*6*6*6*

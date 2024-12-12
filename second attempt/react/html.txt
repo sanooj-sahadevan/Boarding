@@ -1,0 +1,11 @@
+clean up function
+error boubdries
+use state , use reducer
+use effect, use ref
+use context
+react memo, use callback
+react lazy
+passing value from child to parent
+counter using useReducer
+create a auto incremental/decremental counter using redux, and counter should auto increase max to 10 and decrease min to 0 (partially correct)
+fetch - json place holder
