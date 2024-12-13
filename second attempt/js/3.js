@@ -25,22 +25,7 @@
 // let x = str.replaceAll('o','')
 // console.log(x);
 
-// let stack = [2, 1, 4, 3, 7, 6, 4, 5];
 
-// function sort(stack) {
-//   let tempStack = [];
-
-//   while (stack.length) {
-//     let top = stack.pop();
-//     while (tempStack.length > 0 && tempStack[tempStack.length - 1] > top) {
-//       stack.push(tempStack.pop());
-//     }
-//     tempStack.push(top);
-//   }
-//   return tempStack;
-// }
-
-// console.log(sort(stack));
 
 //find the second longest word in sentence
 
@@ -70,16 +55,12 @@
 // console.log(x);
 
 // reverse the array and elements of the array
-let arr = [123, "hello", "world"];
-// [ "dlrow", "olleh", 321 ]
-
-let x = arr.reverse();
-console.log(x);
-
-let y = [];
-for (let i = 0; i < x.length; i++) {
-  for (j = 0; j < x[i].length; j++) {
-    y.push(x[j]);
-  }
-}
-console.log(y);
+// let arr = ["hey", "say", "my", "name"];
+// let x = arr.reverse();
+// console.log(x);
+// let y = [];
+// for (let i = 0; i < x.length; i++) {
+//   let z = x[i].split("").reverse().join("");
+//   y.push(z);
+// }
+// console.log(y);
