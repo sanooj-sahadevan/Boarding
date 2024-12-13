@@ -21,3 +21,4 @@ quadratic probing
 Double hashing
 Rehashing
 You have a linked list to sort, what algorithm would you prefer? 
+implement Binary Search

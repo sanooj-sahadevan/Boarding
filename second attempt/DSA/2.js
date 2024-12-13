@@ -96,7 +96,6 @@
 //         }
 //     }
 
-    
 //   }
 // }
 
@@ -107,5 +106,31 @@
 // hash.seperateChaning('age','sanooj')
 // hash.seperateChaning('gae','sanooj')
 
-
 // hash.print();
+
+let arr = [2, 3, 4, 1, 6, 8, 5, 99];
+
+function merge(a) {
+  if (a.length < 2) {
+    return a;
+  }
+
+  let mid = Math.floor(a.length / 2);
+  let start = a.slice(0, mid);
+  let end = a.slice(mid);
+  return Mergesort(merge(start), merge(end));
+}
+
+function Mergesort(start,end){
+    let sorted = []
+    while(start.length && end.length){
+        if(start[0]<=end[0]){
+            sorted.push(start.shift())
+        }else{
+            sorted.push(end.shift())
+        }
+    }
+    return [...sorted,...start,...end]
+}
+
+console.log(merge(arr));

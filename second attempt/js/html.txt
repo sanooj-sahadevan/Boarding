@@ -46,3 +46,61 @@ using generator function print
 4*4*4*4*4
 5*5*5*5*5*5
 6*6*6*6*6*6*
+
+enable/disable checkoutbox by abutton click
+find thelargest substring without vowels
+how to remove sepcific character from a string?
+prototype
+advantage of rrcrusion
+drawsbacks of merge sort
+
+
+
+
+
+
+
+
+- JS strictmode
+- debouncing
+- polyfills
+- Route 53
+- library vs framework
+- paranthesis matching using stack ----------------------------
+- Insertion sort
+
+Print even numbers in reverse order using generator function with timers
+Coercion
+Proxy object
+Sort a stack into a even stack using temporary stack----------------
+synthetic events
+parent to child communication
+child to parent communication
+how to replace UseState using UseReducer
+
+continue
+prototype chaining
+WebAPIs
+classifications of DS
+Algorithm
+static vs dynamic memory allocation 
+applications of singly LL
+methods to resolve hash collision
+pure components
+why time complexity of quick sort is n square in worst case
+
+
+-find the second longest word in sentence 
+-flat the array using closures 
+-reverse the array and elements of the array 
+
+-difference between useeffect and useLayoutEffect 
+-rules of custom hooks 
+-purpose of key 
+-Difference between Debouncing and Throttling
+
+-benefits/purpose of higher order function 
+-proxy 
+-difference between promise and async-await 
+-can we use finally without using catch 
+-closures (need more clearly)
