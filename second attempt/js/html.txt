@@ -1,5 +1,6 @@
 least occurence
-   odd number /even number : more than one(some conditions)
+odd number /even number : more than one(some conditions)
+
 closure
 callback hell
 Convert that callback hell into promise

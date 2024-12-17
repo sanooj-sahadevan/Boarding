@@ -25,8 +25,6 @@
 // let x = str.replaceAll('o','')
 // console.log(x);
 
-
-
 //find the second longest word in sentence
 
 // let a = "my name is sanooj";
@@ -64,3 +62,61 @@
 //   y.push(z);
 // }
 // console.log(y);
+
+// ------------------------------------------------------------------
+
+// let arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5];
+
+// let f = {},
+//   x = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   f[arr[i]] = 0;
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//   f[arr[i]]++;
+// }
+
+// let smalles = Infinity;
+// let y = 0;
+
+// for (let key in f) {
+//   if (smalles > f[key] && f[key] !== 1) {
+//     smalles = f[key];
+//     y = key;
+//   }
+// }
+// console.log(y);
+// console.log(smalles);
+
+// function A(){
+//     let ctr = 1
+//     return function(){
+//        return ctr++
+//     }
+// }
+// let x = A()
+// console.log(x());
+// console.log(x());
+// console.log(x());
+
+// async function A(callback) {
+//  await callback();
+//   console.log("first");
+// }
+
+//  function B() {
+//   console.log("second");
+// }
+
+// A(B);
+
+//spread, rest --------
+
+// let a   = [ 1,2,3,4,2]
+// let b = [2,3,21,1]
+// let x = 10
+
+// console.log([...a,...b,10,11,x]);
+
