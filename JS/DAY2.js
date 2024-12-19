@@ -144,7 +144,6 @@ Higher-order functions allow functional programming techniques like map, filter,
 /*
 var = redeclare , re intilize
 let  = re initilize, ne declare
-
 const  = no redecalre and no re inilizing
 
 */
@@ -177,11 +176,8 @@ const  = no redecalre and no re inilizing
 // }
 
 // const x = genrator();
-
 // setInterval(() => {
-
 //   console.log(x.next().value);
-
 // }, 1000);
 
 //IIFE

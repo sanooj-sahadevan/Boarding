@@ -21,74 +21,104 @@
 // // }
 // // console.log(sum(a));
 
-// class Node {
-//   constructor(value) {
-//     this.next = null;
-//     this.prev = null;
-//     this.value = value;
-//   }
-// }
+class Node {
+  constructor(value) {
+    this.next = null;
+    this.prev = null;
+    this.value = value;
+  }
+}
 
-// class Linkedlist {
-//   constructor() {
-//     this.size = 0;
-//     this.head = null;
-//     this.tail = null;
-//   }
+class Linkedlist {
+  constructor() {
+    this.size = 0;
+    this.head = null;
+    this.tail = null;
+  }
 
-//   print() {
-//     let curr = this.head;
-//     while (curr) {
-//       console.log(curr.value);
-//       curr = curr.next;
-//     }
-//   }
+  print() {
+    let curr = this.head;
+    while (curr) {
+      console.log(curr.value);
+      curr = curr.next;
+    }
+  }
 
-//   append(value) {
-//     const node = new Node(value);
-//     if (this.size > 0) {
-//       node.prev = this.tail;
-//       this.tail.next = node;
-//     } else {
-//       this.head = node;
-//     }
-//     this.tail = node;
-//     this.size++;
-//   }
+  append(value) {
+    const node = new Node(value);
+    if (this.size > 0) {
+      node.prev = this.tail;
+      this.tail.next = node;
+    } else {
+      this.head = node;
+    }
+    this.tail = node;
+    this.size++;
+  }
 
-//   add(index, value) {
-//     const node = new Node(value);
-//     let curr = this.head;
-//     for (let i = 0; i < index - 1; i++) {
-//       curr = curr.next;
-//     }
-//     node.prev = curr;
-//     node.next = curr.next;
-//     curr.next = node;
-//     curr.next.prev = node;
-//   }
+  add(index, value) {
+    const node = new Node(value);
+    let curr = this.head;
+    for (let i = 0; i < index - 1; i++) {
+      curr = curr.next;
+    }
+    node.prev = curr;
+    node.next = curr.next;
+    curr.next = node;
+    curr.next.prev = node;
+  }
 
-//   mid() {
-//     let middle = Math.floor(this.size / 2);
-//     let curr = this.head;
-//     for (let i = 0; i < middle; i++) {
-//       curr = curr.next;
-//     }
+  //   mid() {
+  //     let middle = Math.floor(this.size / 2);
+  //     let curr = this.head;
+  //     for (let i = 0; i < middle; i++) {
+  //       curr = curr.next;
+  //     }
 
-//     curr.next.prev = curr.prev;
-//     curr.prev.next = curr.next;
-//   }
-// }
+  //     curr.next.prev = curr.prev;
+  //     curr.prev.next = curr.next;
+  //   }
 
-// const list = new Linkedlist();
-// list.append(1);
-// list.append(2);
-// list.append(3);
-// list.append(4);
-// list.append(5);
-// // list.mid();
+  //   mid() {
+  //     let slow = this.head;
+  //     let fast = this.head;
+  //     while (fast!==null && fast.next!==null) {
+  //       slow = slow.next;
+  //       fast = fast.next.next;
+  //     }
+
+  //     console.log(slow.value,'midddddddddddddddd');
+
+  //     // slow.next.prev = slow.prev;
+  //     // slow.prev.next = slow.next;
+  //   }
+
+  node(value) {
+    let curr = this.head;
+    let i = 0;
+    while (curr) {
+    
+      if (curr.value == value) {
+        console.log(true,curr.value,'========',value);
+        console.log(i, "currrrrrrrrrrrrrrrrrrr");
+      }
+      i++;
+      curr = curr.next
+      
+    }
+  }
+}
+
+const list = new Linkedlist();
+list.append(11);
+list.append(22);
+list.append(33);
+list.append(222);
+list.append(544);
+// list.mid();
+list.node(544);
 // list.add(4, 2222222222222);
-// list.print();
+list.print();
 
 // class Stack {
 //   constructor() {
@@ -144,6 +174,3 @@
 // }
 
 // console.log(recrusion(a,0,a.length-1));
-
-
- 
