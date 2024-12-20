@@ -2,14 +2,16 @@
 import { useState } from 'react'
 import './App.css'
 import Clean from './cleam'
+import Custom from './custom'
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
-    <>
-    <p>111</p>
-      {/* <Clean/> */}
-    </>
+  <div>
+
+    <h1>HEY</h1>
+  </div>
+   
   )
 }
 

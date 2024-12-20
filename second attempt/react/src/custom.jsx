@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const useCustom = () => {
-  const [state, setState] = useState("");
+  const [state, setState] = useState([]);
 
   useEffect(() => {
     const fectData = async () => {
@@ -17,16 +17,11 @@ const useCustom = () => {
       } catch (error) {
         console.error(error);
       }
-      return state
     };
 
     fectData();
   }, []);
-
-  
-  return (
-    <></>
-  );
+  return <div></div>;
 };
 
 export default useCustom;
