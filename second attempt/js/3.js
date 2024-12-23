@@ -40,7 +40,9 @@
 //   [2, 4, [3, 8]],
 //   [5, 8],
 // ];
+
 // let x = [];
+
 // for (i = 0; i < arr.length; i++) {
 //   for (j = 0; j < arr[i].length; j++) {
 //     if (Array.isArray(arr[i][j])) {

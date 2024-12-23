@@ -90,7 +90,7 @@ class Linkedlist {
   //     console.log(slow.value,'midddddddddddddddd');
 
   //     // slow.next.prev = slow.prev;
-  //     // slow.prev.next = slow.next;
+  //     // slow.prev.next = slow.next;/
   //   }
 
   node(value) {
