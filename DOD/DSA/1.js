@@ -202,4 +202,3 @@
 // }
 
 // console.log(quick(arr));
-
