@@ -161,15 +161,15 @@
 
 //console.log('aa',recrusion(a));
 
-let a = "MOM";
+// let a = "MOM";
 
-function recrusion(a, i, j) {
-  if (i > j) {
-    return true;
-  }
+// function recrusion(a, i, j) {
+//   if (i > j) {
+//     return true;
+//   }
 
-  if (a[i] !== a[j]) return false;
-  return recrusion(a, (i += 1), (j -= 1));
-}
+//   if (a[i] !== a[j]) return false;
+//   return recrusion(a, (i += 1), (j -= 1));
+// }
 
-console.log(recrusion(a, 0, a.length - 1));
+// console.log(recrusion(a, 0, a.length - 1));
