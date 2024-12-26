@@ -1,0 +1,38 @@
+Give the non-repeating string using hashtable. Input:  "helloworlddyttt", Output : "helloworlddyttt"
+Longest repeating character. Input:   “etrrrtutraaaaa”, Output : "aaaaa"
+SORT (4)
+LInkedlist
+  middle value delete
+  duplicete
+  reverse
+  sort
+  cycle, check cycle
+  maximum value,minium
+  second last delete
+
+recursion
+print value exact 5 times
+  fib--(one value, all value)
+  array sum
+  binary search
+  remove one etter
+  palindrome
+  string reverse
+  tail recrusion
+
+Linear search, Binary search
+
+
+stack
+stack using LL
+monotonic stack, sort
+Queue
+
+Hash table with collision
+      seperte chaining
+      liner probing
+      qudraic probing
+
+
+
+
