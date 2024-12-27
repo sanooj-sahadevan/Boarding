@@ -29,8 +29,6 @@
 // console.log(largest);
 // console.log(y);
 
-let a = [3, 2, 5, 7, 8, 1, 9];
-
 // function merge(a) {
 //   if (a.length < 2) return a;
 //   let mid = Math.floor(a.length / 2)
@@ -88,3 +86,132 @@ let a = [3, 2, 5, 7, 8, 1, 9];
 // }
 
 // console.log(buble(a));
+
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+    this.prev = null;
+  }
+}
+
+class Linkedlist {
+  constructor() {
+    this.size = 0;
+    this.head = null;
+    this.tail = null;
+  }
+
+  print() {
+    let curr = this.head;
+    while (curr) {
+      console.log(curr.value);
+      curr = curr.next;
+    }
+  }
+  append(value) {
+    const node = new Node(value);
+    if (this.size > 0) {
+      node.prev = this.tail;
+      this.tail.next = node;
+    } else {
+      this.head = node;
+    }
+    this.tail = node;
+    this.size++;
+  }
+
+  arraytolinkedlist() {
+    let a = [3, 2, 5, 7, 8, 1, 9, 3];
+    for (let i = 0; i < a.length; i++) {
+      this.append(a[i]);
+    }
+  }
+  middleD() {
+    let mid = Math.floor(this.size / 2);
+    let curr = this.head;
+    for (let i = 0; i < mid; i++) {
+      curr = curr.next;
+    }
+    curr.next.prev = curr.prev;
+    curr.prev.next = curr.next;
+  }
+
+  duplicate() {
+    let curr = this.head;
+    while (curr) {
+      let x = curr.next;
+      while (x) {
+        if (curr.value === x.value) {
+          return console.log("seri da");
+        }
+        x = x.next;
+      }
+      curr = curr.next;
+    }
+    return console.log("poda");
+  }
+
+  reverse() {
+    let curr = this.head;
+    let next = null;
+    let prev = null;
+    while (curr) {
+      next = curr.next;
+      curr.next = curr.prev;
+      curr.prev = next;
+      prev = curr;
+      curr = next;
+    }
+    this.tail = this.head;
+    this.head = prev;
+  }
+  sort() {
+    let swap;
+    do {
+      swap = false;
+      let curr = this.head;
+      while (curr && curr.next) {
+        if (curr.value > curr.next.value) {
+          let temp = curr.value;
+          curr.value = curr.next.value;
+          curr.next.value = temp;
+          swap = true;
+        }
+        curr = curr.next;
+      }
+    } while (swap);
+  }
+
+  cycle() {
+    // if (this.head && this.tail) {
+    //   this.tail.next = this.head;
+    //   this.head.prev = this.tail;
+    // }
+    let curr = this.head;
+    while (curr && curr.next) {
+      curr = curr.next;
+    }
+    curr.next = this.head;
+    this.head.prev = curr;
+  }
+
+  chechkCycle() {
+    let curr = this.head;
+    if (this.tail.next === this.head && this.head.prev === this.tail) {
+      return console.log("cycle");
+    } else {
+      return console.log("noo cycle");
+    }
+  }
+}
+const list = new Linkedlist();
+
+list.arraytolinkedlist();
+//list.middleD();
+//list.duplicate();
+//list.reverse()
+//list.cycle();
+list.chechkCycle();
+//list.sort();
+list.print();

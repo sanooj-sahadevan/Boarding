@@ -131,14 +131,13 @@ list.reverse();
 // MERGE SORT
 let arr = [2, 4, 3, 1, 5, 6];
 function merge(a) {
-
-if (a.length < 2) {
-  return a;
-}
-let mid = Math.floor(a.length / 2);
-let start = a.slice(0, mid);
-let end = a.slice(mid);
-return mergesort(merge(start), merge(end));
+  if (a.length < 2) {
+    return a;
+  }
+  let mid = Math.floor(a.length / 2);
+  let start = a.slice(0, mid);
+  let end = a.slice(mid);
+  return mergesort(merge(start), merge(end));
 }
 
 function mergesort(start, end) {
@@ -151,7 +150,7 @@ function mergesort(start, end) {
       sorted.push(end.shift());
     }
   }
- return [...sorted,...start,...end]
+  return [...sorted, ...start, ...end];
 }
 
 console.log(merge(arr));
