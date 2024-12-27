@@ -15,7 +15,7 @@ deep clone
 -flatten the array 
 Practical :  Write a code for closure.
  Write the syntax for callback hell.
- Convert that callback hell into promise
+ Convert that callback hell into promise----------
  given student object, replace all values with your name
  Write a program to identify and return the odd numbers that appear more than once in an array
 
