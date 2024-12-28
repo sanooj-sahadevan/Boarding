@@ -1,0 +1,26 @@
+clean up function
+error boubdries--------------------------------
+use state , use reducer
+use effect, use ref
+use context
+react memo, use callback
+react lazy
+passing value from child to parent
+counter using useReducer--
+fetch - json place holder
+
+-custom hooks 
+-useRef practical 
+-difference between useeffect and useLayoutEffect 
+child to parent communication
+siblings communication using useContext
+synthetic events
+react fiber
+usestate replace with useReducer
+
+
+create two components and in child component create a input box and in parent component 
+add a H1 tag, when you type in input box it should reflect in h1 tag in parent component
+
+Write the syntax for custom hook.
+Create a page and list the name of countries. And add search functionality to it.
