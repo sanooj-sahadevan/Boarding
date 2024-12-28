@@ -21,7 +21,9 @@ const useCustom = () => {
 
     fectData();
   }, []);
-  return <div></div>;
+  return <div>
+    
+  </div>;
 };
 
 export default useCustom;

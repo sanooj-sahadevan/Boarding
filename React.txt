@@ -20,7 +20,7 @@ usestate replace with useReducer
 
 
 create two components and in child component create a input box and in parent component 
-add a H1 tag, when you type in input box it should reflect in h1 tag in parent component
+   add a H1 tag, when you type in input box it should reflect in h1 tag in parent component
 
 Write the syntax for custom hook.
 Create a page and list the name of countries. And add search functionality to it.
