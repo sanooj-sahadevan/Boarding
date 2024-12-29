@@ -160,29 +160,29 @@
 // // node.pop();
 // node.print();
 
-//let arr = [3, 4, 5, 6, 7, 8, 9, 1];
+let arr = [3, 4, 5, 6, 7, 8, 9, 1];
 
-// function merge(arr) {
-//   if (arr.length < 2) return arr;
-//   let mid = Math.floor(arr.length / 2);
-//   let start = arr.slice(0, mid);
-//   let end = arr.slice(mid);
-//  return mergesort(merge(start), merge(end));
-// }
+function merge(arr) {
+  if (arr.length < 2) return arr;
+  let mid = Math.floor(arr.length / 2);
+  let start = arr.slice(0, mid);
+  let end = arr.slice(mid);
+ return mergesort(merge(start), merge(end));
+}
 
-// function mergesort(start, end) {
-//   let sorted = [];
+function mergesort(start, end) {
+  let sorted = [];
 
-//   while (start.length && end.length) {
-//     if (start[0] <= end[0]) {
-//       sorted.push(start.shift());
-//     } else {
-//       sorted.push(end.shift());
-//     }
-//   }
-//   return [...sorted,...start,...end]
-// }
-// console.log(merge(arr));
+  while (start.length && end.length) {
+    if (start[0] <= end[0]) {
+      sorted.push(start.shift());
+    } else {
+      sorted.push(end.shift());
+    }
+  }
+  return [...sorted,...start,...end]
+}
+console.log(merge(arr));
 
 // function quick(arr) {
 //   if (arr.length < 2) return arr;

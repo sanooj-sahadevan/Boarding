@@ -11,11 +11,11 @@ fetch - json place holder
 
 -custom hooks 
 -useRef practical 
--difference between useeffect and useLayoutEffect 
+-difference between useeffect and useLayoutEffect -------------
 child to parent communication
 siblings communication using useContext
-synthetic events
-react fiber
+synthetic events-----------
+react fiber--------
 usestate replace with useReducer
 
 
