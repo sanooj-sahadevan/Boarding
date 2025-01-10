@@ -62,3 +62,19 @@
 
 // console.log(largest);
 // console.log(second);
+
+// Flatten an Array (with multiple levels of nesting)
+
+let arr = [[1, [2, [3, [4]]]]];
+let x = [];
+function rec(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (Array.isArray(arr[i])) {
+      rec(arr[i]);
+    } else {
+      x.push(arr[i]);
+    }
+  }
+}
+rec(arr)
+console.log(x);
