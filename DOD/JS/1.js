@@ -76,5 +76,6 @@ function rec(arr) {
     }
   }
 }
-rec(arr)
+rec(arr);
 console.log(x);
+  
