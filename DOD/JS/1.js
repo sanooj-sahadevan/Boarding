@@ -63,7 +63,6 @@
 // console.log(largest);
 // console.log(second);
 
-// Flatten an Array (with multiple levels of nesting)
 
 let arr = [[1, [2, [3, [4]]]]];
 let x = [];
@@ -77,4 +76,5 @@ function rec(arr) {
   }
 }
 rec(arr);
+
   
