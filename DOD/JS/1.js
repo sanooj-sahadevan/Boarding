@@ -69,6 +69,7 @@ let x = [];
 function rec(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i])) {
+      
       rec(arr[i]);
     } else {
       x.push(arr[i]);
