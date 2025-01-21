@@ -76,6 +76,7 @@ function rec(arr) {
     }
   }
 }
+
 rec(arr);
 
   
