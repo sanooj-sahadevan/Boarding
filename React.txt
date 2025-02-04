@@ -18,7 +18,10 @@ synthetic events-----------
 react fiber--------
 usestate replace with useReducer
 
+            
 
+
+            
 create two components and in child component create a input box and in parent component 
    add a H1 tag, when you type in input box it should reflect in h1 tag in parent component
 
