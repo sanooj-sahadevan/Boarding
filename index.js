@@ -5,60 +5,131 @@
 // ];
 
 // let x = [];
-// for(let i =0;i<arr.length;i++){
-//     for(let j =0;j<arr[i].length;j++){
-//         x.push(arr[i][j])
-//     }
-// }
-// console.log(x);
 
 // function rec(arr) {
 //   for (let i = 0; i < arr.length; i++) {
 //     if (Array.isArray(arr[i])) {
 //       rec(arr[i]);
-//     }else{
-//         x.push(arr[i]);
+//     } else {
+//       x.push(arr[i]);
 //     }
-
 //   }
 // }
 
 // rec(arr);
 // console.log(x);
 
-//reverse the array and elements of the array
 // let arr = ["hey", "say", "my", "name"];
-// //[ 'eman', 'ym', 'yas', 'yeh' ]
 
-// arr = arr.reverse();
-
-// for (let i = 0; i < arr.length; i++) {
-//   arr[i] = arr[i].split("").reverse().join("");
+// console.log(arr.reverse());
+// let x = [];
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   let str = "";
+//   for (j = arr[i].length - 1; j >= 0; j--) {
+//     str += arr[i][j];
+//   }
+//   x.push(str);
 // }
 
+// console.log(x);
+
+// let ar = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5];
+
+// let arr = Array.from(new Set(ar));
 // console.log(arr);
-
-
-// let arr = [2,9, 4, 6, 7, 9, 8, 100];
-
-// let laragest = 0,
+// let largest = 0,
 //   second = 0,
 //   third = 0;
 // for (let i = 0; i < arr.length; i++) {
-//   if (laragest < arr[i]) {
+//   if (largest < arr[i]) {
 //     third = second;
-//     second = laragest;
-//     laragest = arr[i];
-//   } else if (laragest > second && second < arr[i]) {
+//     second = largest;
+//     largest = arr[i];
+//   } else if (largest > arr[i] && arr[i] < second) {
 //     second = arr[i];
-//   } else if (second > third && third < arr[i]) {
+//   } else if (second > arr[i] && arr[i] < third) {
 //     third = arr[i];
 //   }
 // }
-
-// console.log(laragest);
+// console.log(largest);
 // console.log(second);
 // console.log(third);
+
+// const obj = { a: 1, b: 2, c: 3 };
+// let arr = Object.entries(obj)
+// console.log(arr.pop());
+// console.log(Object.fromEntries(arr));
+
+// function A() {
+//   let ctr = 0;
+//   return function () {
+//     ctr++;
+//     return ctr;
+//   };
+// }
+// let x = A()
+// console.log(x());
+
+// setTimeout(() => {
+//   console.log(1);
+//   setTimeout(() => {
+//     console.log(2);
+//   }, 1000);
+// }, 1000);
+
+// (function (a,b){
+//     console.log(a+b);
+
+// })(2,2)
+
+// function currying(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// }
+// console.log(currying(2)(3)(3));
+//Practical :  Longest repeating character. Input:   “etrrrtutraaaaa”, Output : "aaaaa"
+// let arr = "etrrrrrrrrrrrrrtutraaaaa";
+// arr.split("");
+// let f = {};
+// for (let i = 0; i < arr.length; i++) {
+//   f[arr[i]] = (f[arr[i]] || 0) + 1;
+// }
+// let largest = 0,
+//   res;
+// for (let key in f) {
+//  // console.log(f[key]);
+//   if (largest < f[key]) {
+//     largest = f[key];
+//     res = key;
+//   }
+// }
+// console.log(res);
+
+// function* generator() {
+//   for (let i = 0; i < 10; i++) {
+//     yield i;
+//   }
+// }
+
+// const x = generator();
+// setInterval(() => {
+//   console.log(x.next().value);
+// }, 1000);
+
+// let obj = {
+//   name: "SANOOj",
+//   age: 22,
+// };
+
+// function A() {
+//   console.log(`my name is ${this.name}, ${this.age}`);
+// }
+
+// A.call(obj);
+
 
 // let arr = [
 //   [1, 2],
@@ -67,121 +138,127 @@
 // ];
 
 // let x = [];
-// for(let i =0;i<arr.length;i++){
-//     for(let j =0;j<arr[i].length;j++){
-//         x.push(arr[i][j])
-//     }
-// }
-// console.log(x);
 
 // function rec(arr) {
 //   for (let i = 0; i < arr.length; i++) {
 //     if (Array.isArray(arr[i])) {
 //       rec(arr[i]);
-//     }else{
-//         x.push(arr[i]);
+//     } else {
+//       x.push(arr[i]);
 //     }
-
 //   }
 // }
 
 // rec(arr);
 // console.log(x);
 
-//reverse the array and elements of the array
 // let arr = ["hey", "say", "my", "name"];
-// //[ 'eman', 'ym', 'yas', 'yeh' ]
 
-// arr = arr.reverse();
-
-// for (let i = 0; i < arr.length; i++) {
-//   arr[i] = arr[i].split("").reverse().join("");
-// }
-
-// console.log(arr);
-
-
-// let arr = [2,9, 4, 6, 7, 9, 8, 100];
-
-// let laragest = 0,
-//   second = 0,
-//   third = 0;
-// for (let i = 0; i < arr.length; i++) {
-//   if (laragest < arr[i]) {
-//     third = second;
-//     second = laragest;
-//     laragest = arr[i];
-//   } else if (laragest > second && second < arr[i]) {
-//     second = arr[i];
-//   } else if (second > third && third < arr[i]) {
-//     third = arr[i];
-//   }
-// }
-
-// console.log(laragest);
-// console.log(second);
-// console.log(third);
-
-// let arr = [
-//   [1, 2],
-//   [2, 4, [3, 8]],
-//   [5, 8],
-// ];
-
+// console.log(arr.reverse());
 // let x = [];
-// for(let i =0;i<arr.length;i++){
-//     for(let j =0;j<arr[i].length;j++){
-//         x.push(arr[i][j])
-//     }
-// }
-// console.log(x);
-
-// function rec(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (Array.isArray(arr[i])) {
-//       rec(arr[i]);
-//     }else{
-//         x.push(arr[i]);
-//     }
-
+// for (let i = arr.length - 1; i >= 0; i--) {
+//   let str = "";
+//   for (j = arr[i].length - 1; j >= 0; j--) {
+//     str += arr[i][j];
 //   }
+//   x.push(str);
 // }
 
-// rec(arr);
 // console.log(x);
 
-//reverse the array and elements of the array
-// let arr = ["hey", "say", "my", "name"];
-// //[ 'eman', 'ym', 'yas', 'yeh' ]
+// let ar = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5];
 
-// arr = arr.reverse();
-
-// for (let i = 0; i < arr.length; i++) {
-//   arr[i] = arr[i].split("").reverse().join("");
-// }
-
+// let arr = Array.from(new Set(ar));
 // console.log(arr);
-
-
-// let arr = [2,9, 4, 6, 7, 9, 8, 100];
-
-// let laragest = 0,
+// let largest = 0,
 //   second = 0,
 //   third = 0;
 // for (let i = 0; i < arr.length; i++) {
-//   if (laragest < arr[i]) {
+//   if (largest < arr[i]) {
 //     third = second;
-//     second = laragest;
-//     laragest = arr[i];
-//   } else if (laragest > second && second < arr[i]) {
+//     second = largest;
+//     largest = arr[i];
+//   } else if (largest > arr[i] && arr[i] < second) {
 //     second = arr[i];
-//   } else if (second > third && third < arr[i]) {
+//   } else if (second > arr[i] && arr[i] < third) {
 //     third = arr[i];
 //   }
 // }
-
-// console.log(laragest);
+// console.log(largest);
 // console.log(second);
 // console.log(third);
 
+// const obj = { a: 1, b: 2, c: 3 };
+// let arr = Object.entries(obj)
+// console.log(arr.pop());
+// console.log(Object.fromEntries(arr));
 
+// function A() {
+//   let ctr = 0;
+//   return function () {
+//     ctr++;
+//     return ctr;
+//   };
+// }
+// let x = A()
+// console.log(x());
+
+// setTimeout(() => {
+//   console.log(1);
+//   setTimeout(() => {
+//     console.log(2);
+//   }, 1000);
+// }, 1000);
+
+// (function (a,b){
+//     console.log(a+b);
+
+// })(2,2)
+
+// function currying(a) {
+//   return function (b) {
+//     return function (c) {
+//       return a + b + c;
+//     };
+//   };
+// }
+// console.log(currying(2)(3)(3));
+//Practical :  Longest repeating character. Input:   “etrrrtutraaaaa”, Output : "aaaaa"
+// let arr = "etrrrrrrrrrrrrrtutraaaaa";
+// arr.split("");
+// let f = {};
+// for (let i = 0; i < arr.length; i++) {
+//   f[arr[i]] = (f[arr[i]] || 0) + 1;
+// }
+// let largest = 0,
+//   res;
+// for (let key in f) {
+//  // console.log(f[key]);
+//   if (largest < f[key]) {
+//     largest = f[key];
+//     res = key;
+//   }
+// }
+// console.log(res);
+
+// function* generator() {
+//   for (let i = 0; i < 10; i++) {
+//     yield i;
+//   }
+// }
+
+// const x = generator();
+// setInterval(() => {
+//   console.log(x.next().value);
+// }, 1000);
+
+// let obj = {
+//   name: "SANOOj",
+//   age: 22,
+// };
+
+// function A() {
+//   console.log(`my name is ${this.name}, ${this.age}`);
+// }
+
+// A.call(obj);

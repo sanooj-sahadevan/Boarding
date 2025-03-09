@@ -37,7 +37,7 @@
 //   let str = "";
 
 //    for (let j = arr[i].length - 1; j >= 0; j--) {
-//      str += arr[i]
+//      str += arr[i][j]
 //    }
 //   x.push(str);
 // }
@@ -77,3 +77,6 @@
 // }
 
 // rec(arr);
+
+
+

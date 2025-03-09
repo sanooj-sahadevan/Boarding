@@ -11,16 +11,17 @@
 //     current = current.next;
 //   }
 
-// remove adjacent odd elements from array - not completed,
+// remove adjacent odd elements from array -
 
-// let arr = [1, 3, 4, 2, 5, 7,10, 3, 8];
+let arr = [1, 3, 4, 2, 5, 7, 10, 3, 8, 1, 8, 6, 4];
 
-// let x = arr.filter((curr, i, arr) => {
-//   if (curr % 2 == 0) {
-//     return !arr[i + 1] % 2 == 1 || arr[i - 1] % 2 == 1;
-//   }
-// });
-// console.log(x);
+let x = arr.filter((curr, i, arr) => {
+  if (curr % 2 == 1) {
+    return !arr[i - 1] % 2 == 1 && arr[i + 1] % 2 == 1;
+  }
+  return true;
+});
+console.log(x);
 
 // remoove last element elememt
 
@@ -131,7 +132,6 @@
 //   }
 // }
 // const x = generator();
-
 
 // setInterval(() => {
 //     if(x.next.done){
