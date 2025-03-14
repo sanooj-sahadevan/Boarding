@@ -257,8 +257,7 @@
 //   age: 22,
 // };
 
-// function A() {
-//   console.log(`my name is ${this.name}, ${this.age}`);
-// }
 
-// A.call(obj);
+
+
+

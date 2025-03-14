@@ -229,11 +229,3 @@
 // 1,4,2
 // 3,1,4,2
 
-// for (let i = 0; i < a.length; i++) {
-//   let str = "";9
-//   for (j = i; j >= 0; j--) {
-//     str += a[i];
-//   }
-//   console.log(str);
-  
-// }
