@@ -23,7 +23,7 @@
 //       falatten(arr[i]);
 //     } else {
 //       x.push(arr[i]);
-//     }
+
 //   }
 // }
 
