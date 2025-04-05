@@ -69,21 +69,21 @@ const { log } = require("console");
 
 // reverse the array and elements of the array
 
-// let a = "say my name";
-// // a = a.split(" ");
-// // console.log(a.reverse());
-// let x = [];
-// let word = "";
-// for (let i = a.length - 1; i >= 0; i--) {
-//   if (a[i] !== " ") {
-//     word += a[i];
-//   } else {
-//     x.push(word);
-//     word = "";
-//   }
-// }
-//  x.push(word);
-//  console.log(x);
+let a = "say my name";
+// a = a.split(" ");
+// console.log(a.reverse());
+let x = [];
+let word = "";
+for (let i = a.length - 1; i >= 0; i--) {
+  if (a[i] !== " ") {
+    word += a[i];
+  } else {
+    x.push(word);
+    word = "";
+  }
+}
+ x.push(word);
+ console.log(x);
 
 // let arr = [
 //   [1, 2, 3],

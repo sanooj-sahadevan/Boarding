@@ -77,6 +77,21 @@
 // }
 
 // rec(arr);
+// reverse the array and elements of the array
 
+let arr = ["hey", "say", "my", "name"];
+console.log(arr.join(' '));
 
+let x = [];
+let str = "";
 
+for (let i = arr.length - 1; i >= 0; i--) {
+  if (arr[i] !== " ") {
+    str += arr[i];
+  } else {
+    x.push(str);
+    str = "";
+  }
+}
+x.push(str);
+console.log(x);
